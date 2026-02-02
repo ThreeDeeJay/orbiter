@@ -46,6 +46,9 @@ jobs:
       run: |
         curl https://raw.githubusercontent.com/NVIDIA/nvapi/main/nvapi.h -o "OVP/D3D9Client/nvapi.h"
 
+    - name: List files
+      run: ls -R
+
     - name: Setup Problem Matcher
       uses: ammaraskar/msvc-problem-matcher@master
 
